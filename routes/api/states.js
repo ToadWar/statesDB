@@ -10,7 +10,18 @@ router.route('/')
    // .patch(statesController.updateFunFact)
    // .delete(statesController.deleteFunFact);
 
-    router.route('/:id')
-  //   .get(statescontroller.getState);
+   router.route('/?contig=true' || '/?contig=false')
+  //      .get(statesController.getContig);
+  //  router.route('/:id')
+    router.route('/:state')
+        .get(statesController.getState);
+    router.route('/:state/capital')
+        .get(statesController.getCapital);
+    router.route('/:state/nickname')
+        .get(statesController.getNickname);
+    router.route('/:state/population')
+        .get(statesController.getPopulation);
+    router.route('/:state/admission')
+        .get(statesController.getAdmission);
 
 module.exports = router;

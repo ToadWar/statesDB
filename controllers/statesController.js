@@ -4,10 +4,46 @@ data.states = require('../model/statesData.json');
 
 const getAllStates = async (req,res)=> {
     res.json(data.states);
-  //  const state = await Employee.find();
-  //  if (!employees) return res.status(204).json({'message': 'No Employees Found.'});
-  //  res.json(employees);
 }
+const getState = async (req,res)=> {
+
+    const state = data.states.find( st => st.code == req.params.state);
+    if(!state){
+        return res.status(404).json({'message': `Invalid state abbreviation parameter`});
+    }
+    res.json(state);
+ }
+ const getCapital = async (req,res)=> {
+    const state = data.states.find( st => st.code == req.params.state);
+    if(!state){
+        return res.status(404).json({'message': `Invalid state abbreviation parameter`});
+    }
+    res.json({"state": state.state, "capital": state.capital_city});
+ }
+ const getNickname = async (req,res)=> {
+
+    const state = data.states.find( st => st.code == req.params.state);
+    if(!state){
+        return res.status(404).json({'message': `Invalid state abbreviation parameter`});
+    }
+    res.json({"state": state.state, "nickname": state.nickname});
+ }
+ const getPopulation = async (req,res)=> {
+
+    const state = data.states.find( st => st.code == req.params.state);
+    if(!state){
+        return res.status(404).json({'message': `Invalid state abbreviation parameter`});
+    }
+    res.json({"state": state.state, "population": state.population});
+ }
+ const getAdmission = async (req,res)=> {
+
+    const state = data.states.find( st => st.code == req.params.state);
+    if(!state){
+        return res.status(404).json({'message': `Invalid state abbreviation parameter`});
+    }
+    res.json({"state": state.state, "admitted": state.admission_date});
+ }
 /*
 const createNewEmployee = async (req,res)=>{
     if (!req?.body?.firstname || !req?.body?.lastname){
@@ -60,4 +96,4 @@ const getEmployee = async (req,res)=> {
     res.json(employee);
  }*/
 
- module.exports={getAllStates/*, createNewEmployee, updateEmployee, deleteEmployee, getEmployee*/};
+ module.exports={getAllStates, getState, getNickname, getPopulation, getCapital, getAdmission/*, createNewEmployee, updateEmployee, deleteEmployee, getEmployee*/};
