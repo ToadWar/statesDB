@@ -1,5 +1,5 @@
 const whitelist = [
-    'https://Yoursite.com', 
+    'https://inf-653-final.glitch.me', 
     'http://127.0.0.1:5500', 
     'http://localhost:3500'
 ];
