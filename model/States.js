@@ -2,14 +2,13 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const StatesSchema = new Schema({
-     stateCode: {
+     statecode: {
         type: String, 
         required: true,
         unique: true
     },
-    funfacts: {
-        ofString: [String] 
-    }
+    funfacts: [String] 
+    
 });
 
-module.exports = mongoose.model('States', StatesSchema);
+module.exports = mongoose.model('State', StatesSchema);

@@ -6,15 +6,16 @@ const statesController = require('../../controllers/statesController');
 
 router.route('/')
     .get(statesController.getAllStates)
-  //  .post(statesController.createNewFunFact)
    // .patch(statesController.updateFunFact)
    // .delete(statesController.deleteFunFact);
 
-   router.route('/?contig=true' || '/?contig=false')
-  //      .get(statesController.getContig);
-  //  router.route('/:id')
     router.route('/:state')
         .get(statesController.getState);
+    router.route('/:state/funfact')
+        .get(statesController.getFunFact)
+        .post(statesController.createFunFact)
+        .patch(statesController.updateFunFact)
+        .delete(statesController.deleteFunFact);  
     router.route('/:state/capital')
         .get(statesController.getCapital);
     router.route('/:state/nickname')
@@ -23,5 +24,6 @@ router.route('/')
         .get(statesController.getPopulation);
     router.route('/:state/admission')
         .get(statesController.getAdmission);
+
 
 module.exports = router;
