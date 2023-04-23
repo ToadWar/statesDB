@@ -338,3 +338,7 @@
 20230422	17:07:32	00f23ac0-0d06-4371-ab35-efbcb166e74a	DELETE	$undefined	/states/CA/funfact
 20230422	17:07:39	84c00a0e-1a16-4f2f-8eba-016547389d64	DELETE	$undefined	/states/CA/funfact
 20230422	17:08:54	97846c93-6460-47ba-a594-786e0f364c84	DELETE	$undefined	/states/CA/funfact
+20230422	21:45:21	02f302d5-0ed0-4ef9-a33a-01866ee82ff2	GET	$undefined	/states/OR/
+20230422	21:45:42	251eec64-fa8d-4163-99e3-8b0a72137925	PATCH	$undefined	/states/OR/
+20230422	21:45:52	afa3fea5-ed08-46ff-b35b-6b32cb9147a6	PATCH	$undefined	/states/OR/funfact
+20230422	21:46:05	247c9892-a814-4b21-8e21-de577d5d812b	PATCH	$undefined	/states/OR/funfact

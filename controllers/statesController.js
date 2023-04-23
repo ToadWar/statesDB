@@ -164,14 +164,11 @@ const updateFunFact = async (req,res)=>{
     {
         return res.status(400).json({"message": "State fun fact index value required"});
     }
-    if(!req?.body?.funfacts){// check for fun fact
+    if(!req?.body?.funfact){// check for fun fact
 
         return res.status(400).json({"message": "State fun fact value required"});
     }
-    if(!Array.isArray(req.body.funfacts)) { // check for array
-        return res.status(400).json({'message': "State fun facts value must be an array"});
-    }
-
+   
      // get the state code and set it to upper
      const code = req.params.state.toUpperCase();
 
@@ -191,7 +188,7 @@ const updateFunFact = async (req,res)=>{
     }
     index -= 1; // reduce the index to meet the correct spot
 
-    if (req.body.funfacts) state.funfacts[index] = req.body.funfacts[0]; //if a funfact exists copy the new one over
+    if (req.body.funfact) state.funfacts[index] = req.body.funfact; //if a funfact exists copy the new one over
     
     const result = await state.save(); // save the result
 
