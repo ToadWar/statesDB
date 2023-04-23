@@ -1,5 +1,6 @@
 const whitelist = [
-    'https://inf-653-final.glitch.me', 
+    'https://inf-653-todd-wood.glitch.me',
+   'https://dazzling-snickerdoodle-777101.netlify.app', 
     'http://127.0.0.1:5500', 
     'http://localhost:3500'
 ];

@@ -326,3 +326,15 @@
 20230422	14:26:26	1bd24111-2f20-44af-a3d5-e5c0ebed40d4	POST	$undefined	/states/KS/funfact
 20230422	14:28:19	d63f9d4e-4fc0-4da6-9c3a-f0911038e0d3	POST	$undefined	/states/KS/funfact
 20230422	14:44:14	797ef7dc-5346-4b9d-9c65-a65de05ce1fd	POST	$undefined	/states/KS/funfact
+20230422	16:50:21	d3a84f27-a591-47f0-8f4e-0cc63878e736	GET	$undefined	/states/CA
+20230422	16:51:32	2f393b2b-7858-4db3-a61a-b598b052fe68	GET	$undefined	/states/CA
+20230422	16:52:02	1fb72c66-3d53-4fc2-befb-a32e565a4907	GET	$undefined	/states/CA
+20230422	16:52:07	e74cae5d-798b-45a4-9578-127ae7032988	GET	$undefined	/states/Ca
+20230422	16:53:01	ae04ce92-a3dd-4f9d-887c-1e51f99b5470	GET	$undefined	/states/Ca
+20230422	16:53:07	205fd228-61a3-4155-96a0-7aff201369ac	GET	$undefined	/states/
+20230422	16:53:11	1e695bbc-5df0-46b9-9859-15e04f8a3968	GET	$undefined	/states/c
+20230422	17:07:13	07e1b765-725f-4b81-83f0-a09ee1ac372d	GET	$undefined	/states/CA/funfact
+20230422	17:07:22	e846a615-fe36-40ef-87b7-26426f6589f1	DELETE	$undefined	/states/CA/funfact
+20230422	17:07:32	00f23ac0-0d06-4371-ab35-efbcb166e74a	DELETE	$undefined	/states/CA/funfact
+20230422	17:07:39	84c00a0e-1a16-4f2f-8eba-016547389d64	DELETE	$undefined	/states/CA/funfact
+20230422	17:08:54	97846c93-6460-47ba-a594-786e0f364c84	DELETE	$undefined	/states/CA/funfact

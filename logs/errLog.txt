@@ -13,3 +13,5 @@
 20230414	22:16:53	b47724f4-eaf7-4a60-b305-8c3bf0d6e78e	SyntaxError: Unexpected token a in JSON at position 9
 20230414	22:19:50	a441ba08-01f5-4c59-98e4-ae045b41d32b	SyntaxError: Unexpected token ' in JSON at position 1
 20230414	22:20:06	2c6b178c-3113-411e-a7d2-0dfd991e37d3	SyntaxError: Unexpected token ' in JSON at position 1
+20230422	16:50:21	6cd3c925-8f24-4499-b787-07b7678b9767	ReferenceError: code is not defined
+20230422	16:51:32	c8e012a9-492d-468e-ae8b-9eb894ec2908	ReferenceError: code is not defined
